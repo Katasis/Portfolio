@@ -1,0 +1,71 @@
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #fff1e8;
+  display: grid;
+  font-family: "Nunito", sans-serif;
+}
+
+p {
+  /* max-width: 50rem; */
+  align-self: end;
+  top: 8rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.container {
+  justify-self: center;
+  background-image: url("bonfire.gif");
+  background-repeat: no-repeat;
+  height: 20rem;
+  width: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.joke-btn {
+  width: 6.5rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  background-color: inherit;
+}
+
+@media (max-width: 400px) {
+  .container {
+    height: 15rem;
+    width: 20rem;
+    background-size: contain;
+  }
+
+  .joke-btn {
+    width: 4.5rem;
+    height: 2.5rem;
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 430px) {
+  .container {
+    height: 20rem;
+    width: 25rem;
+    background-size: contain;
+  }
+
+  .joke-btn {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    top: 10rem;
+  }
+}

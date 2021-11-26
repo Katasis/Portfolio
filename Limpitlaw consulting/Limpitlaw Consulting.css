@@ -1,0 +1,588 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(to right bottom, #194251, #14213d);
+  color: #fefbf3;
+  min-height: 100vh;
+}
+
+h2:hover {
+  cursor: pointer;
+  color: #d85021;
+}
+
+.container {
+  display: grid;
+}
+
+.intro {
+  height: 4rem;
+  width: 65rem;
+  font-size: 1.05rem;
+  text-align: center;
+  justify-self: center;
+  margin: 3rem 0;
+}
+
+.contents {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-items: center;
+  transition: margin 500ms cubic-bezier(0.39, 0.75, 0.93, 0.79);
+}
+
+/* Other resources listing and animation */
+
+.otherResources {
+  width: 28.4rem;
+  position: absolute;
+  right: 1.3rem;
+  top: 4.5rem;
+  text-align: left;
+  display: flex;
+  border: 2px solid black;
+  border-radius: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 300ms cubic-bezier(0.39, 0.75, 0.93, 0.79);
+}
+
+.otherResources span {
+  font-weight: 600;
+  display: block;
+  padding-bottom: 5px;
+}
+
+.otherResources ul {
+  list-style: none;
+  padding: 0 1rem;
+  margin-right: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #fefbf3;
+}
+
+a:hover {
+  color: #d85021;
+}
+
+/* back to top button */
+
+.back-top-btn {
+  font-size: 1.8rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 1.5rem;
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 20%;
+  background-color: #1c1d16;
+}
+
+/* Below is all about core competencies */
+
+/* Initial core-competencies style */
+
+.core-competencies {
+  justify-self: center;
+  border: 0.3rem solid #1c1d16;
+  width: 15rem;
+  height: 4rem;
+  background-color: #1c1d16;
+  text-align: center;
+  border-radius: 1.5rem;
+  transition: all 600ms cubic-bezier(0.39, 0.75, 0.93, 0.79);
+}
+
+/*  When you hover over core-competencies-h3 text will be highlighted with #d85021 */
+
+.core-competencies-h3:hover {
+  color: #d85021;
+  cursor: pointer;
+}
+
+/* cch3 toggling class for animation */
+.core-competencies-h3 {
+  width: 100%;
+  height: 2rem;
+  color: #fefbf3;
+}
+
+.core-competencies-h3-a {
+  cursor: pointer;
+  height: 2rem;
+  color: #d85021;
+}
+
+.list {
+  list-style: none;
+  text-align: start;
+}
+
+.list li {
+  opacity: 0;
+  visibility: hidden;
+  line-height: 1.5rem;
+  color: #fefbf3;
+  transform-origin: -5% 5%;
+}
+
+.list li:hover {
+  transform: scale(1.14);
+  color: #d85021;
+  cursor: pointer;
+}
+
+/* Above is all about core competencies */
+
+/* Capability styling */
+.capability {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.paragraph1 {
+  font-family: "Roboto", sans-serif;
+  border-radius: 20px;
+  padding: 1.3rem;
+  width: 62.5rem;
+  text-align: justify;
+  opacity: 0.9;
+  line-height: 1.6rem;
+  background-color: #f8f9fa;
+  color: #1c1d16;
+}
+
+.capablityList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 3rem;
+  justify-items: center;
+  list-style: none;
+  border-top: 0.8px solid white;
+  border-bottom: 0.8px solid white;
+}
+
+.paragraph2 {
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  width: 60rem;
+  background-color: #f8f9fa;
+  color: #1c1d16;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.highlight1 {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6rem;
+  font-size: 1.08rem;
+  color: #ff6701;
+}
+
+/* Below is publication styles */
+
+.download-notifier {
+  display: block;
+  font-size: 0.95rem;
+  color: #ff6701;
+  margin-bottom: 1.5rem;
+}
+
+.publications ul {
+  padding: 0 3rem;
+  list-style: none;
+}
+
+.publications li {
+  line-height: 1.2rem;
+  font-size: 0.8rem;
+  color: #818e8e;
+}
+
+.publications a {
+  position: relative;
+}
+
+.publications a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -20px;
+  top: -3px;
+  width: 6px;
+  height: 11px;
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  border-color: #00a8a8;
+  transform-origin: bottom left;
+  transform: rotate(45deg);
+}
+
+.publications li a {
+  font-size: 1rem;
+  visibility: visible;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.18rem;
+  color: #fefbf3;
+}
+
+/* Footer style */
+
+.contact > span.material-icons {
+  display: grid;
+  place-items: center;
+  border-radius: 20%;
+  width: 2.5rem;
+  height: 2.5rem;
+  right: 1.5rem;
+  background-color: #1c1d16;
+}
+
+.contact span:hover {
+  color: #d85021;
+  cursor: pointer;
+}
+
+.contact > span:nth-child(1) {
+  position: fixed;
+  top: 9.5rem;
+}
+.contact > span:nth-child(2) {
+  position: fixed;
+  top: 13.5rem;
+}
+.contact > span:nth-child(3) {
+  position: fixed;
+  top: 17.5rem;
+}
+.contact > span:nth-child(4) {
+  position: fixed;
+  top: 21.5rem;
+}
+
+/* Disappering the contact infos when not interacted */
+span.contact-info {
+  position: fixed;
+  right: 4rem;
+  background-color: #1c1d16;
+  padding: 1px 5px;
+  border-radius: 4px;
+  visibility: hidden;
+}
+
+span.contact-info.email {
+  top: 10rem;
+}
+
+span.contact-info.mobile {
+  top: 14rem;
+}
+
+span.contact-info.fax {
+  top: 18rem;
+}
+
+span.contact-info.post {
+  top: 22rem;
+}
+
+.contact .material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+@media (min-width: 360px) and (max-width: 430px) {
+  body {
+    font-size: 0.6rem;
+  }
+
+  .contents {
+    background-color: #194251;
+    box-shadow: #fefbf3 0 1.5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .intro {
+    height: 10rem;
+    width: 22rem;
+    font-size: 0.75rem;
+    text-align: center;
+    justify-self: center;
+    margin: 1.5rem 0;
+  }
+
+  .core-competencies {
+    display: none;
+  }
+
+  .paragraph1 {
+    display: none;
+  }
+
+  .capability {
+    padding: 0;
+    margin: 0;
+  }
+
+  #Capability {
+    font-size: 0.8rem;
+  }
+
+  .capablityList {
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    column-gap: 2.5rem;
+    font-size: 0.65rem;
+  }
+
+  .paragraph2 {
+    width: 20rem;
+    font-size: 0.7rem;
+    line-height: 1.04rem;
+    display: none;
+  }
+
+  .highlight1 {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  .publications ul {
+    padding: 0 1rem;
+  }
+
+  .publications h4 {
+    font-size: 1rem;
+  }
+
+  .publications li li {
+    font-size: 0.65rem;
+  }
+
+  .publications li a {
+    font-size: 0.8rem;
+  }
+
+  .back-top-btn {
+    right: 0.5rem;
+    bottom: 1rem;
+    font-size: 1.3rem;
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .contact .material-icons.md-36 {
+    font-size: 24px;
+  }
+  .contact span.material-icons {
+    width: 2rem;
+    height: 2rem;
+    top: 13rem;
+  }
+
+  .contact > span:nth-child(1) {
+    position: absolute;
+    right: 18rem;
+    /* left: 4rem; */
+  }
+
+  .contact > span:nth-child(2) {
+    position: absolute;
+    right: 13rem;
+  }
+
+  .contact > span:nth-child(3) {
+    position: absolute;
+    right: 8rem;
+  }
+
+  .contact > span:nth-child(4) {
+    position: absolute;
+    right: 3rem;
+  }
+
+  span.contact-info {
+    position: absolute;
+  }
+
+  span.contact-info.email {
+    top: 15rem;
+    right: 14rem;
+  }
+
+  span.contact-info.mobile {
+    top: 15rem;
+    right: 9.9rem;
+  }
+
+  span.contact-info.fax {
+    top: 15rem;
+    right: 5.3rem;
+  }
+
+  span.contact-info.post {
+    top: 15rem;
+    right: 1rem;
+    width: 6rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  body {
+    font-size: 0.6rem;
+  }
+
+  .contents {
+    background-color: #194251;
+    box-shadow: #fefbf3 0 1.5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .intro {
+    height: 10rem;
+    width: 22rem;
+    font-size: 0.75rem;
+    text-align: center;
+    justify-self: center;
+    margin: 1.5rem 0;
+  }
+
+  .core-competencies {
+    display: none;
+  }
+
+  .paragraph1 {
+    display: none;
+  }
+
+  .capability {
+    padding: 0;
+    margin: 0;
+  }
+
+  #Capability {
+    font-size: 0.8rem;
+  }
+
+  .capablityList {
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    column-gap: 2.5rem;
+    font-size: 0.65rem;
+  }
+
+  .paragraph2 {
+    width: 20rem;
+    font-size: 0.7rem;
+    line-height: 1.04rem;
+    display: none;
+  }
+
+  .highlight1 {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  .publications ul {
+    padding: 0 1rem;
+  }
+
+  .publications h4 {
+    font-size: 1rem;
+  }
+
+  .publications li li {
+    font-size: 0.65rem;
+  }
+
+  .publications li a {
+    font-size: 0.8rem;
+  }
+
+  .back-top-btn {
+    right: 0.5rem;
+    bottom: 1rem;
+    font-size: 1.3rem;
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .contact .material-icons.md-36 {
+    font-size: 24px;
+  }
+  .contact span.material-icons {
+    width: 2rem;
+    height: 2rem;
+    top: 13rem;
+  }
+
+  .contact > span:nth-child(1) {
+    position: absolute;
+    right: 40rem;
+  }
+
+  .contact > span:nth-child(2) {
+    position: absolute;
+    right: 30rem;
+  }
+
+  .contact > span:nth-child(3) {
+    position: absolute;
+    right: 20rem;
+  }
+
+  .contact > span:nth-child(4) {
+    position: absolute;
+    right: 10rem;
+  }
+
+  span.contact-info {
+    position: absolute;
+  }
+
+  span.contact-info.email {
+    top: 15rem;
+    right: 36.5rem;
+  }
+
+  span.contact-info.mobile {
+    top: 15rem;
+    right: 27rem;
+  }
+
+  span.contact-info.fax {
+    top: 15rem;
+    right: 17.5rem;
+  }
+
+  span.contact-info.post {
+    top: 15rem;
+    right: 3rem;
+    width: 14rem;
+  }
+}

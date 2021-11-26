@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000"/>
+    <title>Temerlen Portfolio</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <!-- Tailwind Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+    <!-- AOS js library stylesheet -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+      /* for google chrome blurry images */
+      html{
+        image-rendering: -webkit-optimize-contrast;
+      }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+ 
+
+  <!-- Splash Page -->
+  <main>
+    <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
+      <!-- Background Image -->
+      <div
+        class="absolute top-0 w-full h-full bg-center bg-cover"
+        style="background-image: url('pictures/lil\ bg.jpg');
+        ">
+        <!-- Overlay -->
+        <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+      </div>
+      <!-- Text Over Main Background -->
+      <div class="container relative mx-auto">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+            <div class="pr-12">
+              <h1 data-aos-duration="600" data-aos="zoom-out-down" class="text-white font-semibold text-5xl">
+                Welcome to my Portfolio.
+              </h1>
+              <p data-aos-delay="400" data-aos-duration="600" data-aos="zoom-out-up" class="mt-4 text-lg text-gray-300">
+                Putting in the work and putting in the hours as a self-taught developer. <br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Making Polygon Shape in Background -->
+      <div
+        class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+        style="height: 70px; transform: translateZ(0);"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-gray-300 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+    </div>
+    <!-- End of Splash Page -->
+
+    <!-- Services Section -->
+    <section class="pb-20 bg-gray-300 -mt-24">
+      <!-- 3 Card Section -->
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <!-- Card -->
+          <div data-aos="fade-up-right" data-aos-delay="500" data-aos-duration="700" class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-orange-500">
+                  <!-- Icon -->
+                  <!-- <i class="fas fa-robot"></i> -->
+                  <i class="fab fa-html5 fa-2x"></i>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">HTML5</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                 Creating a semantically accurate one is crucial for SEO, styling, and manipulating the user interface. <hr> Guess what! I can do that very well.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1100" class="w-full md:w-4/12 px-4 text-center">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                  <!-- Icon -->
+                  <i class="fab fa-js-square fa-2x"></i>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">Javascript</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  It can do a bunch of things, from manipulating the user interface to running a server. <hr> I know my way around it better than my homeplace.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div data-aos="fade-up-left" data-aos-delay="500" data-aos-duration="800" class="pt-6 w-full md:w-4/12 px-4 text-center">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+                  <!-- Icon -->
+                  <i class="fab fa-css3-alt fa-2x"></i>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">CSS3</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  With CSS, the aesthetic feelings will materialize by the hands of web developers. <hr> My hands are dirty with it.                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Quote generator page -->
+        <!-- Text Box and Card Container -->
+        <div class="flex flex-wrap items-center mt-32">
+          <!-- Text Box Container -->
+          <div data-aos-duration="600" data-aos="fade-right" class="w-full md:w-6/12 px-4 mr-auto ml-auto">
+            <!-- Text Box -->
+            <div class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
+              <!-- Icon -->
+              <i class="fas fa-star text-xl"></i>
+            </div>
+            <h3 class="text-3xl mb-2 font-semibold leading-normal">
+              This is my first ever mini-project!
+            </h3>
+            <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+              Quote generator will share some of the brightest minds' thoughts with you.
+            </p>
+            <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+              And, if you like the quote you can share it with your friends.
+            </p>
+          </div>
+
+          <!-- Image Cap & Text Card -->
+          <div data-aos-delay="300" data-aos-duration="700" data-aos="flip-right" class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-orange-500">
+              <!-- Image -->
+              <a href="quote-generator/quote-generator.html" target="_blank"><img
+                alt="..."
+                src="pictures/quote.png"
+                class="w-full align-middle rounded-t-lg"
+              /></a> 
+              <blockquote class="relative p-8 mb-4">
+                <!-- Making Polygon Shape in Card -->
+                <svg
+                  preserveAspectRatio="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 583 95"
+                  class="absolute left-0 w-full block"
+                  style="height: 95px; top: -94px;"
+                >
+                  <polygon
+                    points="-30,95 583,95 583,65"
+                    class="text-orange-500 fill-current"
+                  ></polygon>
+                </svg>
+                <!-- Text Box -->
+                <h4 class="text-xl font-semibold text-white">
+                  <a href="quote-generator/quote-generator.html" target="_blank">Quote generator </a>
+                </h4>
+                <p class="text-md mt-2 font-light text-white">
+                  <em>Click on the picture above to read an inspiring and enlightening quote. You can also tweet it.<i class="fab fa-twitter"></i></em>  
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Quote generator page -->
+
+    <!-- Joke teller page -->
+    <section class="relative py-20">
+      <!-- Making Polygon Shape in Background -->
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px; transform: translateZ(0);"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-white fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <!-- Section Container -->
+      <div class="container mx-auto px-4">
+        <div class="items-center flex flex-wrap">
+          <div data-aos-delay="300" data-aos-duration="700" data-aos="flip-left" class="w-full md:w-4/12 ml-auto mr-auto px-4"> 
+            <!-- Image -->
+            <a href="text-to-speech/text-to-speech.html" target="_blank"><img
+              alt="..."
+              class="max-w-full rounded-lg shadow-lg"
+              src="pictures/joke.png"
+            /></a>
+          </div>
+          <!-- Text Box Container-->
+          <div data-aos-duration="600" data-aos="flip-down" class="w-full md:w-5/12 ml-auto mr-auto px-4">
+            <div class="md:pr-12">
+              <!-- Text Box -->
+              <h3 class="text-3xl font-semibold"> <a href="text-to-speech/text-to-speech.html" target="_blank">Joke teller</a></h3>
+              <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                This is one of my mini-projects, a joke teller. I used 2 APIs to make this thing work. I should warn you that dark jokes in there aren't for light humored.
+              </p>
+              <!-- List -->
+              <ul class="list-none mt-6">
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <!-- Icon -->
+                        <!-- <i class="fas fa-fingerprint"></i> -->
+                        <!-- <i class="fas fa-laugh-squint"></i> -->
+                        <i class="fas fa-cloud-download-alt fa-2x"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">
+                        Pulled a joke from JokeAPI
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <!-- Icon -->
+                        <i class="fas fa-microphone-alt fa-2x"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">The joke will be told by VoiceRSS</h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <!-- Icon -->
+                        <i class="fas fa-skull fa-2x"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">Beware of dark humor jokes</h4>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Joke teller page -->
+
+    <!-- Limpitlaw consulting page -->
+    <div class="flex flex-wrap items-center mt-32 bg-gray-100 pb-64">
+      <!-- Text Box Container -->
+      <div data-aos-duration="500" data-aos="zoom-in-right" class="w-full md:w-6/12 px-4 mr-auto ml-auto ">
+        <!-- Text Box -->
+        <h3 class="text-3xl mb-2 font-semibold leading-normal">
+          <a href="Limpitlaw consulting/Limpitlaw Consulting.html" target="_blank">A webpage for client</a>
+        </h3>
+        <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-600">
+          Here is a real world gig I did.
+        </p>
+        <p class="text-lg leading-relaxed mt-0 mb-4 text-gray-600">
+          Due to the lack of images and other visual content, it might look bland. <br> But works flawlessly.
+        </p>
+      </div>
+
+      <!-- Image Cap & Text Card -->
+      <div data-aos-delay="300" data-aos-duration="700" data-aos="zoom-in-left" class="w-full md:w-5/12 ml-auto mr-auto px-4"> 
+        <!-- Image -->
+        <a href="Limpitlaw consulting/Limpitlaw Consulting.html" target="_blank"><img
+          alt="..."
+          class="max-w-full rounded-lg shadow-lg"
+          src="pictures/Limpitlaw.png"
+        /></a> 
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="relative bg-gray-300 pt-8 pb-6">
+    <!-- Section Container -->
+    <div class="container mx-auto px-4 justify-center">
+      <!-- Text Box Container -->
+      <div class="flex flex-wrap justify-center">
+        <div class="w-full lg:w-6/12 px-4 justify-center">
+          <h4 class="text-3xl font-semibold inline mr-6">Let's keep in touch!</h4>
+          
+          <!-- Social Media Buttons -->
+            <a href="https://www.facebook.com/Temerlen" target="_blank"><i class="fab fa-facebook-square fa-2x bg-white text-blue-600 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+            
+            <a href="https://github.com/Katasis" target="_blank"><i class="fab fa-github fa-2x bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=temerlen99@gmail.com" target="_blank"><i class="fas fa-envelope bg-white fa-2x text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+        </div>      
+      </div>
+    </div>
+  </footer>
+  <!-- End of Footer Section -->
+</body>
+<!-- AOS js CDN -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>
